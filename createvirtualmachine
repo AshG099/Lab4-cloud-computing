@@ -1,0 +1,69 @@
+{
+  "name": "lab4",
+  "id": "/subscriptions/566ddc91-6466-4403-937a-73be40eed37d/resourceGroups/tudublin/providers/Microsoft.Compute/virtualMachines/lab4",
+  "type": "Microsoft.Compute/virtualMachines",
+  "location": "westeurope",
+  "properties": {
+    "vmId": "c22ac418-b4c8-4f21-9a0b-3bcfd1a02fb3",
+    "hardwareProfile": {
+      "vmSize": "Standard_D1_v2"
+    },
+    "storageProfile": {
+      "imageReference": {
+        "publisher": "Canonical",
+        "offer": "UbuntuServer",
+        "sku": "16.04-LTS",
+        "version": "latest",
+        "exactVersion": "16.04.202109280"
+      },
+      "osDisk": {
+        "osType": "Linux",
+        "createOption": "FromImage",
+        "caching": "ReadWrite",
+        "managedDisk": {
+          "storageAccountType": "Standard_LRS"
+        },
+        "deleteOption": "Detach",
+        "diskSizeGB": 30
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "myVM",
+      "adminUsername": "adam",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/adam/.ssh/authorized_keys",
+              "keyData": " ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDhhO9yR4UTU3TTSW6jIH6VD3U3s23y8FHepAfl9bD3GGy1TutPptCEE3Rgp71pEB8JmbXy+6NThnR1yk9yE8YzS+sbFtSdTp4Sa1TVXnzGN+30SBJbAlojqfxk40LO0AXBwtZYPXCJISqCl+JaCQiap5W0IjyygoCiYWFtoB0MEgSeA2uPD5k98RLQII3tNLT9rQgmFL90Jo4nC3fI8/iTLG+a19Yn9V4JK6fjOw99Lbi9jR9Dzana0BiMaZIgwD2PGlikvrUmQcuIHssOJcjQSmlaVEMh4IapuY4KvKO14d0hXYkJ+lDd5OUCbrc+fkB389mDD+bWU6m+wy71gxK/nBeD+B/gebuiyt/H8LJaAC7lgORJAg9VRVcmeRJwgDnAp49z3nPC/6oALf8QA5IhoWj0/kEpKfZ2L/08FpgklglAtcJHBwR1M7qn84E2vO9Z/npdWiZPaiu82Q6feNtPIqrjDkEfyGP33QbroUXXJPC64K79/PK20K3g7RgEaC0= generated-by-azure"
+            }
+          ]
+        },
+        "provisionVMAgent": true,
+        "patchSettings": {
+          "patchMode": "ImageDefault",
+          "assessmentMode": "ImageDefault"
+        },
+        "enableVMAgentPlatformUpdates": false
+      },
+      "secrets": [],
+      "allowExtensionOperations": true,
+      "requireGuestProvisionSignal": true
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/566ddc91-6466-4403-937a-73be40eed37d/resourceGroups/tudublin/providers/Microsoft.Network/networkInterfaces/tudublinNIC1",
+          "properties": {
+            "primary": true
+          }
+        }
+      ]
+    },
+    "provisioningState": "Creating",
+    "timeCreated": "2022-11-24T17:24:04.6840464+00:00"
+  }
+}
+
