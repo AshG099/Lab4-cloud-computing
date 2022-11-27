@@ -1,0 +1,18 @@
+{
+  "properties": {
+    "ipConfigurations": [
+      {
+        "name": "ipconfig1",
+        "properties": {
+          "publicIPAddress": {
+            "id": "/subscriptions/5faca297-4fe2-4138-89f2-c852ef0b364e/resourceGroups/pis_group/providers/Microsoft.Network/publicIPAddresses/test-ip"
+          },
+          "subnet": {
+            "id": ""/subscriptions/566ddc91-6466-4403-937a-73be40eed37d/resourceGroups/tudublin/"
+          }
+        }
+      }
+    ]
+  },
+  "location": "westeurope"
+}
